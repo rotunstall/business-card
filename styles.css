@@ -1,0 +1,99 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border: 10px #3a2500 solid;
+    border-radius: 100px
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    background: #cdb991;
+    /* color: #2b2839; */
+    color: #3a2500;
+    border-bottom: 24px solid #bb3e03;
+    border-left: 24px solid #005f73;
+    box-shadow: 10px 5px 8px #bbbbbb;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+.name {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 30px 0 0 0;
+    
+}
+
+.title {
+    padding: 0;
+    margin: 70px 0 0 0;
+}
+
+.location {
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.grow { transition: all .5s ease-in-out; }
+.grow:hover { transform: scale(1.15); }
+
+
+.info-wrapper {
+ height: 160px;	
+ overflow: hidden;
+ position: relative;
+}
+
+.info-wrapper h3  {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 30px 0 0 0;
+ line-height: 50px;
+ text-align: left;
+
+ /* Apply animation to this element */	
+ animation: info-wrapper 2s ease-out;
+}
+
+/* Move it (define the animation) */
+@keyframes info-wrapper {
+ 0%   { 
+ transform: translateX(200%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
